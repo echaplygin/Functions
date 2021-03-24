@@ -1,17 +1,17 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 
-//Прототипы  => *.h  - файл
-//Реализации => *.cpp - файл
-//Принимаемые/Передаваемые параметры
+//РџСЂРѕС‚РѕС‚РёРїС‹  => *.h  - С„Р°Р№Р»
+//Р РµР°Р»РёР·Р°С†РёРё => *.cpp - С„Р°Р№Р»
+//РџСЂРёРЅРёРјР°РµРјС‹Рµ/РџРµСЂРµРґР°РІР°РµРјС‹Рµ РїР°СЂР°РјРµС‚СЂС‹
 //int add(int a=0, int b, int c=0);
 
 #define tab "\t"
 
 void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
 void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
-void Print(int arr[], const int n);//Прототип функции или Объявление функции (Function declaration)
-void Print(double arr[], const int n);//Прототип функции или Объявление функции (Function declaration)
+void Print(int arr[], const int n);//РџСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†РёРё РёР»Рё РћР±СЉСЏРІР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function declaration)
+void Print(double arr[], const int n);//РџСЂРѕС‚РѕС‚РёРї С„СѓРЅРєС†РёРё РёР»Рё РћР±СЉСЏРІР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function declaration)
 void ShiftLeft(int arr[], const int n, const int number_of_shifts);
 void ShiftLeft(double arr[], const int n, const int number_of_shifts);
 int  Sum(int arr[], const int n);
@@ -26,31 +26,31 @@ void main()
 	cout << "Hello functions!" << endl;
 	const int n = 5;
 	int arr[n];
-	//Заполняем массив случайными числами:
+	//Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё:
 	//for (int i = 0; i < n; i++)
 	//{
 	//	arr[i] = rand();
-	//	//Функция rand() возвращает псевдослучайное число в диапазоне от 0 до 32 767.
+	//	//Р¤СѓРЅРєС†РёСЏ rand() РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЃРµРІРґРѕСЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚ 0 РґРѕ 32 767.
 	//}
 	FillRand(arr, n, 400, 500);
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	/*for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;*/
-	Print(arr, n);//Вызов функции (Function call) - исползование написанной ранее функции.
-	cout << "Сумма элементов массива:" << Sum(arr, n) << endl;
-	cout << "Среднее арифметическое: " << Avg(arr, n) << endl;
-	cout << "Минимальное значение в массиве: " << minValueIn(arr, n) << endl;
-	cout << "Отсортированный массив: " << endl;
+	Print(arr, n);//Р’С‹Р·РѕРІ С„СѓРЅРєС†РёРё (Function call) - РёСЃРїРѕР»Р·РѕРІР°РЅРёРµ РЅР°РїРёСЃР°РЅРЅРѕР№ СЂР°РЅРµРµ С„СѓРЅРєС†РёРё.
+	cout << "РЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР°:" << Sum(arr, n) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ: " << Avg(arr, n) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ: " << minValueIn(arr, n) << endl;
+	cout << "РћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ: " << endl;
 	Sort(arr, n);
 	Print(arr, n);
-	//Сдвиг массива на заданное число элементов:
+	//РЎРґРІРёРі РјР°СЃСЃРёРІР° РЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ:
 	int number_of_shifts;
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	ShiftLeft(arr, n, number_of_shifts);
-	//Выводим сдвинутого массив на экран:
+	//Р’С‹РІРѕРґРёРј СЃРґРІРёРЅСѓС‚РѕРіРѕ РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	/*for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
@@ -64,46 +64,46 @@ void main()
 	double brr[m];
 	FillRand(brr, m, 200, 300);
 	Print(brr, m);
-	cout << "Введите количество сдвигов: "; cin >> number_of_shifts;
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: "; cin >> number_of_shifts;
 	ShiftLeft(brr, m, number_of_shifts);
 	Print(brr, m);
 }
 
 void FillRand(int arr[], const int n, int minRand, int maxRand)
 {
-	//Заполняем массив случайными числами:
+	//Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё:
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
-		//Функция rand() возвращает псевдослучайное число в диапазоне от 0 до 32 767.
+		//Р¤СѓРЅРєС†РёСЏ rand() РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЃРµРІРґРѕСЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚ 0 РґРѕ 32 767.
 	}
 }
 void FillRand(double arr[], const int n, int minRand, int maxRand)
 {
-	//Заполняем массив случайными числами:
+	//Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё:
 	minRand *= 100;
 	maxRand *= 100;
 	for (int i = 0; i < n; i++)
 	{
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 		arr[i] /= 100;
-		//Функция rand() возвращает псевдослучайное число в диапазоне от 0 до 32 767.
+		//Р¤СѓРЅРєС†РёСЏ rand() РІРѕР·РІСЂР°С‰Р°РµС‚ РїСЃРµРІРґРѕСЃР»СѓС‡Р°Р№РЅРѕРµ С‡РёСЃР»Рѕ РІ РґРёР°РїР°Р·РѕРЅРµ РѕС‚ 0 РґРѕ 32 767.
 	}
 }
 
 
-void Print(int arr[], const int n)//Реализация функции или Определение функции (Function definition)
+void Print(int arr[], const int n)//Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РёР»Рё РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function definition)
 {
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
 }
-void Print(double arr[], const int n)//Реализация функции или Определение функции (Function definition)
+void Print(double arr[], const int n)//Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РёР»Рё РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function definition)
 {
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
@@ -111,9 +111,9 @@ void Print(double arr[], const int n)//Реализация функции или Определение функци
 	cout << endl;
 }
 
-void ShiftLeft(int arr[], const int n, const int number_of_shifts)	//Сдвигает массивна заданное число элементов
+void ShiftLeft(int arr[], const int n, const int number_of_shifts)	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІРЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ
 {
-	for (int i = 0; i < number_of_shifts; i++)	//Этот цикл сдвигает массив на number_of_shifts элементов
+	for (int i = 0; i < number_of_shifts; i++)	//Р­С‚РѕС‚ С†РёРєР» СЃРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° number_of_shifts СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		int buffer = arr[0];
 		for (int j = 0; j < n; j++)
@@ -123,9 +123,9 @@ void ShiftLeft(int arr[], const int n, const int number_of_shifts)	//Сдвигает ма
 		arr[n - 1] = buffer;
 	}
 }
-void ShiftLeft(double arr[], const int n, const int number_of_shifts)	//Сдвигает массивна заданное число элементов
+void ShiftLeft(double arr[], const int n, const int number_of_shifts)	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІРЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ
 {
-	for (int i = 0; i < number_of_shifts; i++)	//Этот цикл сдвигает массив на number_of_shifts элементов
+	for (int i = 0; i < number_of_shifts; i++)	//Р­С‚РѕС‚ С†РёРєР» СЃРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° number_of_shifts СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		double buffer = arr[0];
 		for (int j = 0; j < n; j++)
@@ -161,10 +161,10 @@ void Sort(int arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
 	{
-		//Счетчик 'i' ВЫБИРАЕТ элемент, в который нужно поместить минимальное значение.
+		//РЎС‡РµС‚С‡РёРє 'i' Р’Р«Р‘РР РђР•Рў СЌР»РµРјРµРЅС‚, РІ РєРѕС‚РѕСЂС‹Р№ РЅСѓР¶РЅРѕ РїРѕРјРµСЃС‚РёС‚СЊ РјРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ.
 		for (int j = i + 1; j < n; j++)
 		{
-			//Счетчик 'j' ПЕРЕБИРАЕТ остальные элементы (правую часть массива) в поисках минимального значения.
+			//РЎС‡РµС‚С‡РёРє 'j' РџР•Р Р•Р‘РР РђР•Рў РѕСЃС‚Р°Р»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹ (РїСЂР°РІСѓСЋ С‡Р°СЃС‚СЊ РјР°СЃСЃРёРІР°) РІ РїРѕРёСЃРєР°С… РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ.
 			if (arr[j] < arr[i])
 			{
 				int buffer = arr[i];
@@ -174,3 +174,4 @@ void Sort(int arr[], const int n)
 		}
 	}
 }
+
