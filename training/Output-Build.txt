@@ -1,0 +1,7 @@
+﻿Build started...
+1>------ Build started: Project: DZ_28_02_2021, Configuration: Debug Win32 ------
+1>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(491,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (training.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+1>Source.cpp
+1>C:\Users\evcha\source\repos\Functions\training\Source.cpp(97,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+1>Done building project "training.vcxproj".
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
