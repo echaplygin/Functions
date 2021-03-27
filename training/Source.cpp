@@ -1,11 +1,11 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define tab "\t"
 
 void FillRand(int arr[], const int n)
 {
-	for (int i = 0; i < n; i++) //çàïîëíÿåì ìàññèâ ñëó÷àéíûìè ÷èñëàìè
+	for (int i = 0; i < n; i++) //Ð·Ð°Ð¿Ð¾Ð»Ð½ÑÐµÐ¼ Ð¼Ð°ÑÑÐ¸Ð² ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ð¼Ð¸ Ñ‡Ð¸ÑÐ»Ð°Ð¼Ð¸
 	{
 		arr[i] = rand();
 	}
@@ -13,7 +13,7 @@ void FillRand(int arr[], const int n)
 
 void Print(int arr[], const int n)
 {
-	for (int i = 0; i < n; i++) //Âûâîä ìàññèâà íà ýêðàí
+	for (int i = 0; i < n; i++) //Ð’Ñ‹Ð²Ð¾Ð´ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ð° ÑÐºÑ€Ð°Ð½
 	{
 		cout << arr[i] << tab;
 	}
@@ -52,7 +52,7 @@ void main()
 	Print(arr, n);
 
 	int number_of_shifts;
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	//for (int i = 0; i < number_of_shifts; i++)
 	//{
 	//	int buffer = arr[0];
@@ -89,7 +89,7 @@ void main()
 	//cout << endl;
 	Print(brr, m);
 
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð²: "; cin >> number_of_shifts;
 	//for (int i = 0; i < number_of_shifts; i++)
 	//{
 	//	int buffer = brr[0];
