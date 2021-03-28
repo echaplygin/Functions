@@ -93,6 +93,8 @@ void Sort(int arr[], const int n)
 	}
 }
 
+
+
 void main()
 {
 	setlocale(LC_ALL, "Russian");
