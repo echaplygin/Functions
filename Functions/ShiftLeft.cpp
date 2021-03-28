@@ -1,8 +1,8 @@
-#include"ShiftLeft.h"
+п»ї#include"ShiftLeft.h"
 
-void ShiftLeft(char arr[], const int n, const int number_of_shifts)	//Сдвигает массивна заданное число элементов
+void ShiftLeft(char arr[], const int n, const int number_of_shifts)	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІРЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ
 {
-	for (int i = 0; i < number_of_shifts; i++)	//Этот цикл сдвигает массив на number_of_shifts элементов
+	for (int i = 0; i < number_of_shifts; i++)	//Р­С‚РѕС‚ С†РёРєР» СЃРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° number_of_shifts СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		int buffer = arr[0];
 		for (int j = 0; j < n; j++)
@@ -12,9 +12,9 @@ void ShiftLeft(char arr[], const int n, const int number_of_shifts)	//Сдвигает м
 		arr[n - 1] = buffer;
 	}
 }
-void ShiftLeft(int arr[], const int n, const int number_of_shifts)	//Сдвигает массивна заданное число элементов
+void ShiftLeft(int arr[], const int n, const int number_of_shifts)	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІРЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ
 {
-	for (int i = 0; i < number_of_shifts; i++)	//Этот цикл сдвигает массив на number_of_shifts элементов
+	for (int i = 0; i < number_of_shifts; i++)	//Р­С‚РѕС‚ С†РёРєР» СЃРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° number_of_shifts СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		int buffer = arr[0];
 		for (int j = 0; j < n; j++)
@@ -24,9 +24,9 @@ void ShiftLeft(int arr[], const int n, const int number_of_shifts)	//Сдвигает ма
 		arr[n - 1] = buffer;
 	}
 }
-void ShiftLeft(float arr[], const int n, const int number_of_shifts)	//Сдвигает массивна заданное число элементов
+void ShiftLeft(float arr[], const int n, const int number_of_shifts)	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІРЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ
 {
-	for (int i = 0; i < number_of_shifts; i++)	//Этот цикл сдвигает массив на number_of_shifts элементов
+	for (int i = 0; i < number_of_shifts; i++)	//Р­С‚РѕС‚ С†РёРєР» СЃРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° number_of_shifts СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		float buffer = arr[0];
 		for (int j = 0; j < n; j++)
@@ -36,9 +36,9 @@ void ShiftLeft(float arr[], const int n, const int number_of_shifts)	//Сдвигает 
 		arr[n - 1] = buffer;
 	}
 }
-void ShiftLeft(double arr[], const int n, const int number_of_shifts)	//Сдвигает массивна заданное число элементов
+void ShiftLeft(double arr[], const int n, const int number_of_shifts)	//РЎРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІРЅР° Р·Р°РґР°РЅРЅРѕРµ С‡РёСЃР»Рѕ СЌР»РµРјРµРЅС‚РѕРІ
 {
-	for (int i = 0; i < number_of_shifts; i++)	//Этот цикл сдвигает массив на number_of_shifts элементов
+	for (int i = 0; i < number_of_shifts; i++)	//Р­С‚РѕС‚ С†РёРєР» СЃРґРІРёРіР°РµС‚ РјР°СЃСЃРёРІ РЅР° number_of_shifts СЌР»РµРјРµРЅС‚РѕРІ
 	{
 		double buffer = arr[0];
 		for (int j = 0; j < n; j++)
