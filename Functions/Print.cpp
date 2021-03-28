@@ -1,36 +1,36 @@
-#include"Print.h"
+п»ї#include"Print.h"
 
 
-void Print(char arr[], const int n)//Реализация функции или Определение функции (Function definition)
+void Print(char arr[], const int n)//Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РёР»Рё РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function definition)
 {
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
 }
-void Print(int arr[], const int n)//Реализация функции или Определение функции (Function definition)
+void Print(int arr[], const int n)//Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РёР»Рё РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function definition)
 {
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
 }
-void Print(float arr[], const int n)//Реализация функции или Определение функции (Function definition)
+void Print(float arr[], const int n)//Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РёР»Рё РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function definition)
 {
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
 	}
 	cout << endl;
 }
-void Print(double arr[], const int n)//Реализация функции или Определение функции (Function definition)
+void Print(double arr[], const int n)//Р РµР°Р»РёР·Р°С†РёСЏ С„СѓРЅРєС†РёРё РёР»Рё РћРїСЂРµРґРµР»РµРЅРёРµ С„СѓРЅРєС†РёРё (Function definition)
 {
-	//Выводим массив на экран:
+	//Р’С‹РІРѕРґРёРј РјР°СЃСЃРёРІ РЅР° СЌРєСЂР°РЅ:
 	for (int i = 0; i < n; i++)
 	{
 		cout << arr[i] << tab;
