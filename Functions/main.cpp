@@ -46,12 +46,15 @@ void Sort(int arr[], const int n);
 void Sort(float arr[], const int n);
 void Sort(double arr[], const int n);
 
+void UniqueRandom(int arr[], const int n);
+
 void main()
 {
 	setlocale(LC_ALL, "");
 	cout << "Hello functions!" << endl;
 	const int n = 5;
 	int arr[n];
+	cout << "Массив №1" << endl;
 	//Заполняем массив случайными числами:
 	//for (int i = 0; i < n; i++)
 	//{
@@ -85,7 +88,7 @@ void main()
 	Print(arr, n);
 
 	//////////////////////////////////////////////////////////////////////
-
+	cout << "Массив №2" << endl;
 	const int m = 8;
 	double brr[m];
 	FillRand(brr, m, 200, 300);
@@ -116,6 +119,14 @@ void main()
 	cout << "Отсортированный массив: " << endl;
 	Sort(f_arr, SIZE_FLOAT);
 	Print(f_arr, SIZE_FLOAT);
+
+
+	cout << "***************************************************************" << endl;
+	cout << "Функция UniqueRandom - Вывод массива уникальных чисел: " << endl;
+	UniqueRandom(arr, n);
+	Print(arr, n);
+	cout << "***************************************************************" << endl;
+
 
 }
 
@@ -432,3 +443,12 @@ void Sort(double arr[], const int n)
 	}
 }
 
+void UniqueRandom(int arr[], const int n)
+{
+	srand(time(NULL));
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 100;
+	}
+
+}

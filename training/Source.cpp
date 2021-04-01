@@ -1,4 +1,5 @@
 ﻿#include<iostream>
+#include<ctime>
 using namespace std;
 
 #define tab "\t"
@@ -92,7 +93,15 @@ void Sort(int arr[], const int n)
 		}
 	}
 }
-
+void UniqueRandom(int arr[], const int n)
+{
+	srand(time(NULL));
+	for (int i = 0; i < n; i++)
+	{
+		arr[i] = rand() % 100;
+	}
+	
+}
 
 
 void main()
@@ -113,7 +122,6 @@ void main()
 	//}
 	//cout << endl;
 	Print(arr, n);
-
 	int number_of_shifts;
 	cout << "Введите количество сдвигов влево: "; cin >> number_of_shifts;
 	//for (int i = 0; i < number_of_shifts; i++)
@@ -124,7 +132,6 @@ void main()
 	//		arr[j] = arr[j + 1];
 	//	}
 	//	arr[n - 1] = buffer;
-
 	//}
 	//for (int i = 0; i < n; i++)
 	//{
@@ -144,6 +151,11 @@ void main()
 	cout << "Отсортированный массив: " << endl;
 	Sort(arr, n);
 	Print(arr, n);
+	cout << "***************************************************************" << endl;
+	cout << "Функция UniqueRandom - Вывод массива уникальных чисел: " << endl;
+	UniqueRandom(arr, n);
+	Print(arr, n);
+	cout << "***************************************************************" << endl;
 
 
 	///////////////////////////////////////////////////////////////
