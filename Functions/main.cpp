@@ -6,6 +6,12 @@ using namespace std;
 //Принимаемые/Передаваемые параметры
 //int add(int a=0, int b, int c=0);
 
+/*
+-------------------------------------
+Шаблоны функций (Functions templates)
+-------------------------------------
+*/
+
 #define tab "\t"
 
 void FillRand(char arr[], const int n, int minRand = 0, int maxRand = 100);
