@@ -2,7 +2,7 @@
 #include<ctime>
 using namespace std;
 #define tab "\t"
-//#define POINTER_BASICS
+#define POINTER_BASICS
 //#define POINTER_AND_ARRAYS
 void main()
 {
